@@ -1,0 +1,10 @@
+<diV class="category">
+    <diV class="category__title">
+        {{title}}
+    </diV>
+
+    <diV class="category__subCategory">
+        <app-sub-category [routerLink]="['product']" *ngFor= "let element of arrSubcat" (click) ="sendSubCatData(element)" [subCatTitle] = element.type [subCatImg] = element.subcatAvatar ></app-sub-category>
+    </diV>
+
+</diV>

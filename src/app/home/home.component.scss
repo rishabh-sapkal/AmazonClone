@@ -1,0 +1,39 @@
+.home{
+   max-width: 1500px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #e7e7e7;
+   position: absolute;
+    &__image{
+        width: 100%;
+        mask-image : linear-gradient( to bottom, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0));
+        z-index: -1;
+        margin-bottom: -250px;
+    }
+
+    &__slider{
+      width: 100%;
+      mask-image : linear-gradient( to bottom, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0));
+      z-index: -1;
+      margin-bottom: -250px;
+    }
+
+    &__categories{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: auto ;
+        grid-gap: 30px;
+        padding: 0 20px;
+
+        &--category{
+
+            background-color: white;
+            z-index: 10;
+        }
+
+    }
+
+}
+.carousel-inner{
+    overflow: visible;
+}

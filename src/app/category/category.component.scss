@@ -1,0 +1,15 @@
+.category{
+            padding: 10px;
+    &__subCategory{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    &__title{
+        font-size: 21px;
+        color: #111111;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,55 @@
+<nav class="navbar">
+    <div class="navbar__logo" (click)="homeRedirect()">
+        <img src="http://pngimg.com/uploads/amazon/amazon_PNG25.png" alt="logo">
+        <!-- <span>.in</span> -->
+        <diV>
+            .in
+        </diV>
+    </div>
+
+    <diV class="navbar__searchBox">
+        <input type="text" class="navbar__searchInput">
+        <span class="material-icons">
+            search
+        </span>
+    </diV>
+
+    <diV class="navbar__navLinks">
+
+        <a [routerLink]="['login']" class="navbar__link">
+            <span class="navbar__link--heading">
+                Hello , {{userName}}
+            </span>
+            <span class="navbar__link--subHeading">
+                Accounts
+            </span>
+        </a>
+
+        <a [routerLink]="['login']" class="navbar__link">
+            <span class="navbar__link--heading">
+                Return
+            </span>
+            <span class="navbar__link--subHeading">
+                & Orders
+            </span>
+        </a>
+        <a [routerLink]="['login']" class="navbar__link">
+            <span class="navbar__link--heading">
+                Try
+            </span>
+            <span class="navbar__link--subHeading">
+                Prime
+            </span>
+        </a>
+
+        <a [routerLink]="['checkout']" class="navbar__basket">
+            <span class="material-icons">
+                shopping_cart
+            </span>
+            <span class="navbar__Count">
+                {{arrBasket.length}}
+            </span>
+        </a>
+    </diV>
+
+</nav>

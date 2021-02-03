@@ -1,0 +1,16 @@
+<diV class="products">
+<diV class="products__product" *ngFor= "let element of arrProducts">
+    <img src="{{element.avatar}}">
+    <diV class="products__productInfo">
+        <h2>{{element.title}}</h2>
+        <diV style="color:#f0c14b;" *ngFor= "let item of printStar(element.rating)" class="material-icons">
+           grade
+        </diV>
+        <p class="products__price">
+            <small>₹</small>
+            <strong>{{element.price}}</strong>
+        </p>
+        <button mat-button (click)= "addToBasket(element)" >Add to Basket</button>
+    </diV>
+</diV>
+</diV>
